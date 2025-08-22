@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+  --tallyho-primary: #0057d9;
+  --tallyho-white: #ffffff; /* Explicitly define white as a hex code */
+  --tallyho-body: #374151; /* For text color */
+  --tallyho-danger: #C8102E;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--tallyho-body);
+  background: #fafafa; /* Explicitly set the background to white */
+}
+
+.accent-background {
+  background-color: #fafafa; /* Ensure this section is white */
+}
+
+#checkout-calendar .calendar-body .day {
+  margin: 5% auto 10% auto;
+}
+
+#checkout-calendar .calendar-header {
+  background: none;
+  color: var(--tallyho-body);
+}
+
+#checkout-body {
+  background: #ffffff; /* Ensure this section is white */
+}
+
+#checkout-footer button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 1.4em;
+  font-size: 16px;
+  color: var(--tallyho-primary);
+}
+
+#checkout-btn-prev > .icon-back {
+  transition: margin 0.2s;
+}
+
+#checkout-btn-prev:hover > .icon-back {
+  margin-left: -10px;
+  margin-right: 20px;
+}
+
+#checkout-btn-next > .icon-continue {
+  transition: margin 0.2s;
+}
+
+#checkout-btn-next:hover > .icon-continue {
+  margin-right: -10px;
+  margin-left: 20px;
+}
+
+#checkout-header {
+  min-height: 35px;
+  background: none;
+}
+
+#times-header, .checkout-discount, .summary-discount {
+  background: none;
+  color: var(--tallyho-body);
+}
+
+#checkout-header .title {
+  display: none;
+}
+
+#checkout-header .locale, #checkout-header .locale .omega, #checkout-calendar .alpha {
+  border: none;
+}
+
+#checkout-header .locale .lang, #checkout-header .locale .currency {
+  color: var(--tallyho-body);
+}
+
+#checkout.embed #checkout-body,
+#checkout.embed #checkout-header {
+  border: none !important;
+}
+
+#checkout-placement {
+  display: none;
+}
+
+#checkout.checkout-sm.embed #checkout-wrapper,
+#checkout.checkout-sm.button #checkout-wrapper {
+  max-width: none;
+}
+
+#checkout.embed #checkout-wrapper,
+#checkout.button #checkout-wrapper {
+  max-width: none;
+}
+
+.result-error {
+  color: var(--tallyho-danger);
+  padding: 10px 0 5px 0;
+}
+
+.has-error {
+  color: var(--tallyho-danger);
+}
+
+.calendar-footer .voucher-button {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+#checkout-tickets .tier > .quantity > .plus,
+#checkout-tickets .tier > .quantity > .minus {
+  background: #dbeafe;
+}
+
+#checkout-tickets .tier > .quantity > .plus:hover,
+#checkout-tickets .tier > .quantity > .minus:hover {
+  background: #bfdbfe;
+}
+
+#checkout-summary table .price {
+  font-weight: 600;
+}
+
+.add-gift-card-message {
+  color: var(--tallyho-primary);
+}
+
+#checkout-payment .alt {
+  background: #ffffff; /* Explicitly set to white */
+  position: initial;
+}
+
+#checkout-container {
+  width: 100%; /* Makes widget fill parent container's width */
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures proper width calculation */
+  background: #ffffff; /* Explicitly set the background to white */
+  min-height: 650px; /* Ensure the widget never shrinks below 650px */
+  overflow-y: auto;
+  position: relative;
+}
+
+
+/* Media Query for Smaller Screens */
+@media (max-width: 600px) {
+  #checkout-container {
+    min-height: 400px; /* Adjust minimum height for smaller screens */
+  }
+}
