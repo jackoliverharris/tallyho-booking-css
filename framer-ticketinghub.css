@@ -146,6 +146,34 @@ body {
   position: relative;
 }
 
+#checkout-calendar .calendar-body .day.available {
+    color: #347A5B;
+    border-color: #347A5B;
+}
+
+#times-header .day.available:hover, #times-header .day.available.current {
+    color: white;
+    background: #347A5B;
+}
+#times-header .day.available {
+    color: #347A5B;
+    border-color: #347A5B;
+}
+
+#checkout-calendar .calendar-body .day.limited {
+    color: #f0ad4e;
+    border-color: #AB8A64;
+}
+
+#times-header .day.limited:hover, #times-header .day.limited.current {
+    color: white;
+    background: #AB8A64;
+}
+
+#times-header .day.limited {
+    color: #AB8A64;
+    border-color: #AB8A64;
+}
 
 /* Media Query for Smaller Screens */
 @media (max-width: 600px) {
