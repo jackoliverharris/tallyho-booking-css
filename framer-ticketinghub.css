@@ -2,7 +2,7 @@
 
 :root {
   --tallyho-primary: #0057d9;
-  --tallyho-white: #ffffff; /* Explicitly define white as a hex code */
+  --tallyho-white: #fafafa; /* Explicitly define white as a hex code */
   --tallyho-body: #374151; /* For text color */
   --tallyho-danger: #C8102E;
 }
@@ -27,7 +27,7 @@ body {
 }
 
 #checkout-body {
-  background: #ffffff; /* Ensure this section is white */
+  background: #fafafa; /* Ensure this section is white */
 }
 
 #checkout-footer button {
@@ -130,7 +130,7 @@ body {
 }
 
 #checkout-payment .alt {
-  background: #ffffff; /* Explicitly set to white */
+  background: #fafafa; /* Explicitly set to white */
   position: initial;
 }
 
@@ -140,7 +140,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* Ensures proper width calculation */
-  background: #ffffff; /* Explicitly set the background to white */
+  background: #fafafa; /* Explicitly set the background to white */
   min-height: 650px; /* Ensure the widget never shrinks below 650px */
   overflow-y: auto;
   position: relative;
